@@ -75,7 +75,7 @@ h2 > span {
   max-width: 100px;
 }
 
-.btn2{
+.btn2 {
   border: none;
   outline: none;
   padding: 18px 27px;
@@ -86,15 +86,15 @@ h2 > span {
   cursor: pointer;
 }
 
-.btn2.green{
-  background: #63DC40;
+.btn2.green {
+  background: #63dc40;
 }
 
-.btn2.orange{
+.btn2.orange {
   background: #eb5821;
 }
 
-.btn2.lightPurple{
+.btn2.lightPurple {
   background: var(--light-purple);
 }
 
@@ -523,13 +523,16 @@ footer {
   position: relative;
 }
 
-footer > img {
+footer::before {
+  content: "";
   position: absolute;
   right: -300px;
   top: -250px;
   width: 1000px;
-  height: auto;
+  height: 1000px;
+  background: var(--light-purple);
   transform: rotate(-70deg);
+  border-radius: 100%;
   z-index: -1;
 }
 
@@ -838,6 +841,11 @@ footer .container {
     margin-top: 30px;
   }
 
+  footer{
+    overflow: hidden;
+    height: auto;
+  }
+
   .footerLogo {
     width: 200px;
   }
@@ -866,7 +874,7 @@ footer .container {
     padding: 0;
   }
 
-  footer > img {
+  footer::before {
     display: none;
   }
 }
@@ -1986,25 +1994,24 @@ footer .container {
   overflow-y: scroll;
 }
 
-.progressInfoWrapper::-webkit-scrollbar{
+.progressInfoWrapper::-webkit-scrollbar {
   width: 20px;
 }
 
-.progressInfoWrapper::-webkit-scrollbar-track{
-  background: #F5F1FF;
+.progressInfoWrapper::-webkit-scrollbar-track {
+  background: #f5f1ff;
   margin-top: 10px;
   border-radius: 100px;
 }
 
-.progressInfoWrapper::-webkit-scrollbar-thumb{
-  background: #D9C8FF;
+.progressInfoWrapper::-webkit-scrollbar-thumb {
+  background: #d9c8ff;
   border-radius: 100px;
-  border: 4px solid #F5F1FF;
+  border: 4px solid #f5f1ff;
 }
 
-.progressRight{
+.progressRight {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
 }
 
 .leftTabs {
@@ -2026,7 +2033,7 @@ footer .container {
   cursor: pointer;
 }
 
-.signleTab h3{
+.signleTab h3 {
   width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
@@ -2053,13 +2060,13 @@ footer .container {
   background: #f6f2ff;
 }
 
-.progressLeftBtn{
+.progressLeftBtn {
   padding: 40px 60px;
   display: flex;
   align-items: center;
 }
 
-.progressLeftBtn button{
+.progressLeftBtn button {
   padding: 23px 32px;
   font-size: 24px;
 }
@@ -2218,35 +2225,33 @@ footer .container {
   padding-bottom: 50px;
 }
 
-.quotationDetails{
+.quotationDetails {
   display: flex;
   flex-direction: column;
-  gap:28px;
+  gap: 28px;
   padding-top: 20px;
 }
 
-.quotationDetails p{
+.quotationDetails p {
   font-size: 22px;
   color: var(--dark-purple);
 }
 
-.quotationDetails p > span{
+.quotationDetails p > span {
   font-family: Bold;
 }
 
-.quotationWrapper h2{
-  font-size: 35px ;
+.quotationWrapper h2 {
+  font-size: 35px;
   color: var(--light-purple);
   margin-bottom: 30px;
 }
 
-.quotationWrapper button{
+.quotationWrapper button {
   margin-top: 40px;
   padding: 22px 35px;
   font-size: 23px;
 }
-
-
 
 @media screen and (max-width: 600px) {
   #accountProgress .sectionHeading h1 {
@@ -2297,16 +2302,9 @@ footer .container {
 
 /* Operator Account Pages - End */
 
-
-
-
-
-
-
-
 /* Operator Profile Page - Start */
 
-#profileMain{
+#profileMain {
   padding-top: 100px;
 }
 
@@ -2315,7 +2313,7 @@ footer .container {
   margin: auto;
 }
 
-.profileMainWrapper > a{
+.profileMainWrapper > a {
   font-size: 22px;
   color: var(--dark-purple);
   text-decoration: underline;
@@ -2323,40 +2321,40 @@ footer .container {
   display: inline-block;
 }
 
-.profileTop{
+.profileTop {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 100px;
 }
 
-.profile{
+.profile {
   display: flex;
   gap: 50px;
   align-items: center;
 }
 
-.profile > img{
+.profile > img {
   width: 240px;
 }
 
-.profile > div h2{
+.profile > div h2 {
   font-size: 40px;
   color: var(--dark-purple);
   margin-bottom: 10px;
 }
 
-.profile > div p{
+.profile > div p {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.profile > div img{
+.profile > div img {
   width: 160px;
   margin-top: 10px;
 }
 
-.profileInfos{
+.profileInfos {
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -2368,7 +2366,7 @@ footer .container {
   gap: 10px;
 }
 
-.profileInfos img{
+.profileInfos img {
   width: 25px;
 }
 
@@ -2377,13 +2375,15 @@ footer .container {
   color: var(--dark-purple);
 }
 
-.profileAbout{
+.profileAbout {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
 }
 
-.profileAbout h2, .profilePhotos h2, .profileReviews h2{
+.profileAbout h2,
+.profilePhotos h2,
+.profileReviews h2 {
   font-size: 40px;
   color: var(--dark-purple);
   border-bottom: 1px solid var(--dark-purple);
@@ -2395,7 +2395,6 @@ footer .container {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  
 }
 
 .profileAbout > div p {
@@ -2414,17 +2413,17 @@ footer .container {
   gap: 20px;
 }
 
-.profilePhotos > div img{
+.profilePhotos > div img {
   width: 240px;
 }
 
-.reviewsWrapper{
+.reviewsWrapper {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.reviewBox{
+.reviewBox {
   box-shadow: 0 0 20px -15px rgba(0, 0, 0, 0.676);
   padding: 40px 30px;
   display: flex;
@@ -2433,13 +2432,13 @@ footer .container {
   border-radius: 18px;
 }
 
-.reviewBox h4{
+.reviewBox h4 {
   font-size: 22px;
   font-family: Bold;
   color: var(--dark-purple);
 }
 
-.reviewBox > div img{
+.reviewBox > div img {
   width: 180px;
   margin-bottom: 20px;
 }
@@ -2449,8 +2448,7 @@ footer .container {
   color: var(--dark-purple);
 }
 
-
-.profileReviews > a{
+.profileReviews > a {
   text-align: center;
   display: block;
   font-size: 20px;
@@ -2459,9 +2457,8 @@ footer .container {
   margin-top: 40px;
 }
 
-
 @media screen and (max-width: 600px) {
-  .profileMainWrapper{
+  .profileMainWrapper {
     width: 100%;
   }
   .profileTop {
@@ -2471,22 +2468,22 @@ footer .container {
     margin-bottom: 70px;
   }
 
-  .profile{
+  .profile {
     gap: 30px;
   }
-  .profile > img{
+  .profile > img {
     width: 130px;
   }
 
-  .profile > div h2{
+  .profile > div h2 {
     font-size: 24px;
   }
 
-  .profile > div p{
+  .profile > div p {
     font-size: 18px;
   }
 
-  .profile > div img{
+  .profile > div img {
     width: 120px;
     margin-top: 5px;
   }
@@ -2500,7 +2497,7 @@ footer .container {
     align-items: flex-start;
   }
 
-  .profilePhotos > div img{
+  .profilePhotos > div img {
     width: 100%;
   }
 
@@ -2508,11 +2505,79 @@ footer .container {
     flex-direction: column;
   }
 
-  .reviewBox{
+  .reviewBox {
     gap: 80px;
+  }
+}
+
+/* Operator Profile Page - End */
+
+@media screen and (max-width: 1600px) {
+  .webNav {
+    gap: 30px;
+  }
+  .webNav ul{
+    gap: 16px;
+  }
+
+  .navBtn a {
+    font-size: 20px;
+  }
+  #hero {
+    height: 1130px;
+  }
+  .container {
+    width: 90%;
+  }
+
+  .firstThingsBoxes {
+    flex-wrap: wrap;
+  }
+
+  .firstThingsBoxes .box {
+    width: 23% !important;
+    height: 270px;
+  }
+
+  .firstThingsBoxes .box .boxWrapper h3 {
+    font-size: 45px;
+  }
+
+  .firstThingsBoxes .box .boxWrapper span {
+    font-size: 45px;
+  }
+
+  .featureBoxes{
+    gap: 50px;
+  }
+
+  .featureBox{
+    width: 43%;
+  }
+
+  .featureBox img{
+    width: 100px;
+  }
+
+  .featureBox h3{
+    font-size: 28px;
+  }
+
+  .keyFeatures {
+    padding-left: 100px;
+  }
+
+  .featureList{
+    padding: 0;
+  }
+
+  .ctaWrapper h2{
+    font-size: 45px;
+  }
+
+  .caseStudyMiddle .right img{
+    object-fit: cover;
+    border-radius: 18px;
   }
 
 }
-
-
-/* Operator Profile Page - End */
