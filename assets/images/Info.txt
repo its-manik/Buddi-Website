@@ -1,0 +1,7 @@
+Quotation Portal should have the Quotation Portal Popup1 & 2 included in the page, you can link the popups to PostCode lookup Buttons
+
+Operator Account Progress has a tabbed area, which is shown in Operator Account Progress Tab1&2
+
+The Graphics are contained in the Assets folder, If there are any extra graphics you need that have not been included, then let us know and we will send them to you.
+
+The Mobile Device Views are a guide to how these should be displayed on a mobile device
