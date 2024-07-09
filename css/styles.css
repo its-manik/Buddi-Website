@@ -668,218 +668,6 @@ footer .container {
   font-size: 22px;
 }
 
-/* Media Query for Mobile Screen - Start */
-
-@media screen and (max-width: 600px) {
-  .webNav ul,
-  .navBtn {
-    display: none;
-  }
-  .webNav {
-    width: 100%;
-    padding: 0 20px;
-    justify-content: space-between;
-  }
-
-  .menuIcon i {
-    font-size: 30px;
-    cursor: pointer;
-  }
-
-  .logo {
-    width: 180px;
-  }
-
-  .menuIcon {
-    display: block;
-  }
-
-  #hero {
-    height: 100%;
-  }
-
-  .hero {
-    padding-top: 50px;
-    gap: 30px;
-  }
-
-  .heroContent h1 {
-    font-size: 35px;
-  }
-  .heroContent h3 {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-
-  .heroImage {
-    width: 100%;
-  }
-
-  #firstThing .container {
-    margin-top: 0;
-    padding-top: 40px;
-  }
-
-  .sectionHeading h2 {
-    font-size: 35px;
-  }
-  #firstThing .sectionHeading {
-    margin-bottom: 20px;
-  }
-  #firstThing .sectionHeading p {
-    font-size: 20px;
-    width: 100%;
-  }
-
-  .firstThingsBoxes {
-    flex-direction: column;
-  }
-
-  .keyFeatures {
-    flex-direction: column;
-  }
-
-  .keyFeatures .sectionHeading {
-    text-align: center;
-    padding: 0 15px;
-  }
-
-  .keyFeatures .sectionHeading p {
-    margin-top: 10px;
-  }
-  .sectionHeading p {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-
-  .featureBox {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .featureBox h3 {
-    font-size: 27px;
-  }
-
-  .keyLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .keyLeft button {
-    width: 90%;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .keyRight {
-    margin-bottom: -5px;
-  }
-
-  .forOperators > .container {
-    padding: 0 15px;
-  }
-
-  .forOperators h2 {
-    font-size: 35px;
-  }
-
-  .blogs {
-    flex-direction: column;
-  }
-
-  .blog {
-    text-align: center;
-  }
-
-  .blog h3 {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .blog p {
-    font-size: 20px;
-  }
-
-  .blog button {
-    width: 100%;
-    font-size: 20px;
-  }
-
-  #meetBuddi {
-    flex-direction: column;
-  }
-  #meetBuddi > div {
-    width: 100%;
-    text-align: center;
-  }
-
-  #meetBuddi .sectionHeading h2 {
-    font-size: 45px;
-  }
-
-  .meetBuddiRight {
-    padding: 0;
-    width: 100% !important;
-    margin-top: 49px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 15px;
-  }
-
-  .meetBuddiRight .btn {
-    width: 95%;
-    margin-bottom: 20px;
-    margin-top: 30px;
-  }
-
-  footer{
-    overflow: hidden;
-    height: auto;
-  }
-
-  .footerLogo {
-    width: 200px;
-  }
-
-  .footerWrapper {
-    flex-direction: column;
-    gap: 50px;
-    padding-top: 80px;
-    padding-bottom: 75px;
-  }
-
-  .footerSocials > div {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footerSocials input {
-    width: 100%;
-  }
-
-  .footerSocials button {
-    width: 60%;
-  }
-
-  .keyFeatures {
-    padding: 0;
-  }
-
-  footer::before {
-    display: none;
-  }
-}
-
-/* Media Query for Mobile Screen - End */
 
 /* Styling for Case Studies Page - Start */
 
@@ -2581,3 +2369,231 @@ footer .container {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Mobile Screen - Start */
+
+@media screen and (max-width: 600px) {
+  .webNav ul,
+  .navBtn {
+    display: none;
+  }
+  .webNav {
+    width: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .menuIcon i {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  #hero {
+    height: 100%;
+  }
+
+  .hero {
+    padding-top: 50px;
+    gap: 30px;
+  }
+
+  .heroContent h1 {
+    font-size: 35px;
+  }
+  .heroContent h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .heroImage {
+    width: 100%;
+  }
+
+  #firstThing .container {
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 35px;
+  }
+  #firstThing .sectionHeading {
+    margin-bottom: 20px;
+  }
+  #firstThing .sectionHeading p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .firstThingsBoxes {
+    flex-direction: column;
+  }
+
+  .firstThingsBoxes .box{
+    width: 100% !important;
+  }
+
+  .keyFeatures {
+    flex-direction: column;
+  }
+
+  .keyFeatures .sectionHeading {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .keyFeatures .sectionHeading p {
+    margin-top: 10px;
+  }
+  .sectionHeading p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .featureBox {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .featureBox h3 {
+    font-size: 27px;
+  }
+
+  .keyLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .keyLeft button {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .keyRight {
+    margin-bottom: -5px;
+  }
+
+  .forOperators > .container {
+    padding: 0 15px;
+  }
+
+  .forOperators h2 {
+    font-size: 35px;
+  }
+
+  .blogs {
+    flex-direction: column;
+  }
+
+  .blog {
+    text-align: center;
+  }
+
+  .blog h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .blog p {
+    font-size: 20px;
+  }
+
+  .blog button {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  #meetBuddi {
+    flex-direction: column;
+  }
+  #meetBuddi > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  #meetBuddi .sectionHeading h2 {
+    font-size: 45px;
+  }
+
+  .meetBuddiRight {
+    padding: 0;
+    width: 100% !important;
+    margin-top: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .meetBuddiRight .btn {
+    width: 95%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  footer{
+    overflow: hidden;
+    height: auto;
+  }
+
+  .footerLogo {
+    width: 200px;
+  }
+
+  .footerWrapper {
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 75px;
+  }
+
+  .footerSocials > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerSocials input {
+    width: 100%;
+  }
+
+  .footerSocials button {
+    width: 60%;
+  }
+
+  .keyFeatures {
+    padding: 0;
+  }
+
+  footer::before {
+    display: none;
+  }
+}
+
+/* Media Query for Mobile Screen - End */
