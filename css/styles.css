@@ -86,16 +86,16 @@ h2 > span {
   cursor: pointer;
 }
 
-.btn2.green {
-  background: #63dc40;
+.green {
+  background: #63dc40 !important;
 }
 
-.btn2.orange {
-  background: #eb5821;
+.orange {
+  background: #eb5821 !important;
 }
 
-.btn2.lightPurple {
-  background: var(--light-purple);
+.lightPurple {
+  background: var(--light-purple) !important;
 }
 
 .container {
@@ -526,10 +526,10 @@ footer {
 footer::before {
   content: "";
   position: absolute;
-  right: -300px;
+  right: -280px;
   top: -250px;
-  width: 1000px;
-  height: 1000px;
+  width: 800px;
+  height: 800px;
   background: var(--light-purple);
   transform: rotate(-70deg);
   border-radius: 100%;
@@ -667,7 +667,6 @@ footer .container {
   color: var(--white);
   font-size: 22px;
 }
-
 
 /* Styling for Case Studies Page - Start */
 
@@ -1762,7 +1761,6 @@ footer .container {
   margin-top: 70px;
   border-radius: 18px;
   display: flex;
-
   overflow: hidden;
   max-height: 1420px;
 }
@@ -1806,6 +1804,7 @@ footer .container {
   display: flex;
   height: 120px;
   background: #eadfff;
+  overflow: hidden;
 }
 
 .leftTabs h3 {
@@ -1981,13 +1980,24 @@ footer .container {
   width: 26px;
 }
 
-.progressRightBtns {
+.progressRightBtns,
+.bookedJobsRightBtns {
   display: flex;
   gap: 20px;
   margin-top: 30px;
 }
 
-.progressRightBtns button {
+.bookedJobsRightBtns {
+  margin-top: 40px;
+  padding-bottom: 200px;
+}
+
+.userAccountBookedJobs .accountProgressBox {
+  max-height: 1750px;
+}
+
+.progressRightBtns button,
+.bookedJobsRightBtns button {
   border: none;
   outline: none;
   padding: 18px 27px;
@@ -2063,7 +2073,7 @@ footer .container {
 
   .accountProgressBox {
     flex-direction: column;
-    max-height: fit-content;
+    max-height: fit-content !important;
   }
 
   .progressInfoBox {
@@ -2245,6 +2255,69 @@ footer .container {
   margin-top: 40px;
 }
 
+.jobDetailsWrapper h2 {
+  font-size: 35px;
+  color: var(--light-purple);
+  margin-bottom: 25px;
+}
+
+.jobDetailsProfile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  margin-top: 60px;
+  border-bottom: 1px dashed var(--dark-purple);
+  width: 90%;
+}
+
+.jobProfile {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.jobProfile > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.jobProfile > div h4 {
+  font-size: 22px;
+  font-family: Bold;
+  color: var(--dark-purple);
+}
+
+.jobProfile > div p {
+  color: var(--dark-purple);
+}
+
+.jobProfile > div button {
+  font-size: 14px;
+  padding: 10px;
+  max-width: 170px;
+  margin-top: 10px;
+}
+
+.jobProfile img {
+  width: 110px;
+}
+
+.jobProfileImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.jobProfileImages img {
+  width: 130px;
+  height: auto;
+  border-radius: 18px;
+}
+
 @media screen and (max-width: 600px) {
   .profileMainWrapper {
     width: 100%;
@@ -2296,15 +2369,339 @@ footer .container {
   .reviewBox {
     gap: 80px;
   }
+
+  .jobDetailsProfile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .bookedJobsRightBtns {
+    flex-direction: column;
+  }
 }
 
 /* Operator Profile Page - End */
+
+/* Quotation Portal Page - Start */
+
+
+.quotationPortalPage .webNav{
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+#quotationPortal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 60px;
+  padding-top: 120px;
+  background: url(../assets/images/heroBg.png);
+  height: 1100px;
+}
+
+.portalHeading {
+  text-align: center;
+}
+
+.portalHeading h1 {
+  font-size: 65px;
+  color: var(--dark-purple);
+}
+
+.portalHeading h1 > span {
+  color: var(--light-purple);
+}
+
+.portalHeading h3 {
+  font-size: 34px;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+
+.portalChecks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.portalChecks > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.portalChecks > div img {
+  width: 60px;
+}
+
+.portalChecks > div h4 {
+  font-size: 24px;
+  font-family: Bold;
+  color: var(--dark-purple);
+  text-align: center;
+}
+
+.portalBox {
+  box-shadow: 0 0 20px -15px rgba(0, 0, 0, 0.676);
+  z-index: 100;
+  background: var(--white);
+  padding: 100px;
+  border-radius: 40px;
+  width: 93%;
+  margin: -500px auto 0;
+  margin-bottom: 150px;
+}
+
+.portalBox h2 {
+  font-size: 50px;
+  color: var(--dark-purple);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+.portalBox h2 > span {
+  color: var(--light-purple);
+}
+
+.topInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.topInputs > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.topInputs > div > input {
+  width: 100%;
+  padding: 22px;
+  border-radius: 13px;
+  border: 1px solid #c8c8c8;
+  font-size: 22px;
+  color: var(--dark-purple);
+}
+
+.topInputs > .inputFieldWithBtn > input {
+  width: 80%;
+}
+
+.topInputs > .inputFieldWithBtn > button {
+  padding: 22px;
+  font-size: 22px;
+  border-radius: 13px;
+  width: 20%;
+  background: var(--light-purple);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+}
+
+.topInputs > div > input::placeholder {
+  color: var(--dark-purple);
+}
+
+.radios {
+  display: flex;
+  gap: 100px;
+  margin: 40px 0;
+  margin-left: 25px;
+}
+
+.radioQuestion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 22px;
+  color: var(--dark-purple);
+}
+
+.radioQuestion > div {
+  display: flex;
+  gap: 50px;
+}
+
+.radioQuestion > p {
+  font-size: 22px;
+  color: var(--dark-purple);
+}
+
+.radioQuestion > div > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: c;
+}
+
+.radioQuestion > div > div label,
+.portalTextarea label {
+  font-size: 22px;
+  color: var(--dark-purple);
+}
+
+.radioQuestion > div > div input,
+.portalTextarea input {
+  height: 30px;
+  width: 30px;
+  background: var(--light);
+  appearance: none;
+  border-radius: 100%;
+  border: 1px solid var(--dark-purple);
+}
+
+.portalTextarea {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.portalTextarea > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.portalTextarea textarea {
+  width: 100%;
+  padding: 22px;
+  border-radius: 13px;
+  border: 1px solid #c8c8c8;
+  font-size: 22px;
+  color: var(--dark-purple);
+}
+
+.portalTextarea button {
+  max-width: 230px;
+  padding: 24px;
+ 
+}
+
+
+
+
+@media screen and (max-width:600px) {
+  
+  .portalHeading{
+    padding: 0 20px;
+  }
+
+  .portalHeading h1{
+    font-size: 45px;
+  }
+
+  .portalHeading h3{
+    font-size: 28px;
+  }
+
+  .portalChecks{
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portalChecks > div {
+    width: 40%;
+  }
+
+  .portalBox{
+    margin-top: -200px;
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .portalBoxContainer{
+    width: 100%;
+  }
+
+  .portalBox > h2{
+    font-size: 40px;
+  }
+
+  .topInputs > div{
+    flex-direction: column;
+  }
+
+  .topInputs > div input{
+    font-size: 18px;
+  }
+
+  .inputFieldWithBtn{
+    flex-direction: row !important;
+    gap: 10px !important;
+  }
+
+  .inputFieldWithBtn > input{
+    width: 100% !important;
+  }
+
+  .inputFieldWithBtn > button{
+    width: 100% !important;
+    font-size: 18px !important;
+  }
+
+  .radios {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .radioQuestion > p{
+    font-size: 18px;
+  }
+
+  .radioQuestion > div {
+    gap: 20px;
+  }
+
+  .radioQuestion > div > div > label{
+    font-size: 18px;
+  }
+
+  .radioQuestion > div > div > input{
+    width: 25px;
+    height: 25px;
+  }
+
+  .portalTextarea textarea{
+    font-size: 18px;
+  }
+
+  .portalTextarea{
+    gap: 20px;
+  }
+
+  .portalTextarea > div > label{
+    font-size: 18px;
+  }
+
+  .portalTextarea > button{
+    font-size: 18px;
+  }
+
+}
+
+/* Quotation Portal Page - End */
 
 @media screen and (max-width: 1600px) {
   .webNav {
     gap: 30px;
   }
-  .webNav ul{
+  .webNav ul {
     gap: 16px;
   }
 
@@ -2335,19 +2732,19 @@ footer .container {
     font-size: 45px;
   }
 
-  .featureBoxes{
+  .featureBoxes {
     gap: 50px;
   }
 
-  .featureBox{
+  .featureBox {
     width: 43%;
   }
 
-  .featureBox img{
+  .featureBox img {
     width: 100px;
   }
 
-  .featureBox h3{
+  .featureBox h3 {
     font-size: 28px;
   }
 
@@ -2355,31 +2752,22 @@ footer .container {
     padding-left: 100px;
   }
 
-  .featureList{
+  .featureList {
     padding: 0;
   }
 
-  .ctaWrapper h2{
+  .ctaWrapper h2 {
     font-size: 45px;
   }
 
-  .caseStudyMiddle .right img{
+  .caseStudyMiddle .right img {
     object-fit: cover;
     border-radius: 18px;
+  
   }
 
+
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Media Query for Mobile Screen - Start */
 
@@ -2449,7 +2837,7 @@ footer .container {
     flex-direction: column;
   }
 
-  .firstThingsBoxes .box{
+  .firstThingsBoxes .box {
     width: 100% !important;
   }
 
@@ -2558,7 +2946,7 @@ footer .container {
     margin-top: 30px;
   }
 
-  footer{
+  footer {
     overflow: hidden;
     height: auto;
   }
