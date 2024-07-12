@@ -59,7 +59,7 @@ h2 > span {
   border: none;
   outline: none;
   border-radius: 100px;
-  padding: 21px 10px 21px 50px;
+  padding: 20px 40px;
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ h2 > span {
 }
 
 .btn img {
-  max-width: 100px;
+  max-width: 60px;
 }
 
 .btn2 {
@@ -191,6 +191,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .navBtn a {
@@ -368,7 +369,7 @@ header {
 }
 
 .featureBox {
-  width: 45%;
+  width: 43%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -392,7 +393,7 @@ header {
   border: none;
   outline: none;
   border-radius: 100px;
-  padding: 21px 10px 21px 50px;
+  padding: 20px 30px;
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -406,7 +407,7 @@ header {
 
 .keyLeft button img,
 .blog button img {
-  max-width: 100px;
+  width: 60px;
 }
 
 .keyRight {
@@ -453,7 +454,7 @@ header {
 .blog > img {
   border-radius: 30px;
   height: 450px;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .blog h3 {
@@ -484,6 +485,8 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
+  gap: 100px;
+  padding-bottom: 200px;
 }
 
 #meetBuddi > div {
@@ -1350,7 +1353,7 @@ footer .container {
   padding: 0 100px;
 }
 
-.dashboardNav .logo img {
+.dashboardNav .logo img{
   width: 350px;
 }
 
@@ -1802,7 +1805,7 @@ footer .container {
 
 .leftTabs {
   display: flex;
-  height: 120px;
+  height: 155px;
   background: #eadfff;
   overflow: hidden;
 }
@@ -2106,6 +2109,10 @@ footer .container {
   padding-top: 100px;
 }
 
+.OperatorProfilePage .logo img{
+  width: 230px;
+}
+
 .profileMainWrapper {
   width: 85%;
   margin: auto;
@@ -2386,8 +2393,7 @@ footer .container {
 
 /* Quotation Portal Page - Start */
 
-
-.quotationPortalPage .webNav{
+.quotationPortalPage .webNav {
   justify-content: space-between;
   padding-right: 30px;
 }
@@ -2587,30 +2593,25 @@ footer .container {
 .portalTextarea button {
   max-width: 230px;
   padding: 24px;
- 
 }
 
-
-
-
-@media screen and (max-width:600px) {
-  
-  .portalHeading{
+@media screen and (max-width: 800px) {
+  .portalHeading {
     padding: 0 20px;
   }
 
-  .portalHeading h1{
+  .portalHeading h1 {
     font-size: 45px;
   }
 
-  .portalHeading h3{
+  .portalHeading h3 {
     font-size: 28px;
   }
 
-  .portalChecks{
+  .portalChecks {
     flex-wrap: wrap;
     padding: 0 20px;
-    gap:50px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
   }
@@ -2619,38 +2620,38 @@ footer .container {
     width: 40%;
   }
 
-  .portalBox{
+  .portalBox {
     margin-top: -200px;
     width: 100%;
     padding: 50px 20px;
   }
 
-  .portalBoxContainer{
+  .portalBoxContainer {
     width: 100%;
   }
 
-  .portalBox > h2{
+  .portalBox > h2 {
     font-size: 40px;
   }
 
-  .topInputs > div{
+  .topInputs > div {
     flex-direction: column;
   }
 
-  .topInputs > div input{
+  .topInputs > div input {
     font-size: 18px;
   }
 
-  .inputFieldWithBtn{
+  .inputFieldWithBtn {
     flex-direction: row !important;
     gap: 10px !important;
   }
 
-  .inputFieldWithBtn > input{
+  .inputFieldWithBtn > input {
     width: 100% !important;
   }
 
-  .inputFieldWithBtn > button{
+  .inputFieldWithBtn > button {
     width: 100% !important;
     font-size: 18px !important;
   }
@@ -2660,7 +2661,7 @@ footer .container {
     gap: 30px;
   }
 
-  .radioQuestion > p{
+  .radioQuestion > p {
     font-size: 18px;
   }
 
@@ -2668,34 +2669,170 @@ footer .container {
     gap: 20px;
   }
 
-  .radioQuestion > div > div > label{
+  .radioQuestion > div > div > label {
     font-size: 18px;
   }
 
-  .radioQuestion > div > div > input{
+  .radioQuestion > div > div > input {
     width: 25px;
     height: 25px;
   }
 
-  .portalTextarea textarea{
+  .portalTextarea textarea {
     font-size: 18px;
   }
 
-  .portalTextarea{
+  .portalTextarea {
     gap: 20px;
   }
 
-  .portalTextarea > div > label{
+  .portalTextarea > div > label {
     font-size: 18px;
   }
 
-  .portalTextarea > button{
+  .portalTextarea > button {
     font-size: 18px;
   }
-
 }
 
 /* Quotation Portal Page - End */
+
+/* Styling for popup - Start  */
+
+.popupWrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: var(--white);
+  padding: 70px 50px;
+  border-radius: 30px;
+  max-width: 700px;
+  position: relative;
+}
+
+.popup i {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popupHeading,
+.popupHeading2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.popupHeading h2,
+.popupHeading2 h2 {
+  font-size: 40px;
+  color: var(--light-purple);
+  margin-bottom: 10px;
+}
+
+.popupHeading2 h2 {
+  color: var(--dark-purple);
+}
+
+.popupHeading p,
+.popupHeading2 p {
+  font-size: 20px;
+  color: var(--dark-purple);
+  margin-bottom: 10px;
+}
+
+.popupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 20px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed var(--dark-purple);
+  padding-bottom: 40px;
+}
+
+.popupForm input,
+.popupForm button {
+  width: 100%;
+}
+.popupForm input {
+  width: 100%;
+  padding: 22px 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.popupForm button {
+  padding: 22px;
+  text-align: left;
+  background: var(--light-purple);
+}
+
+.createAccountBtn {
+  width: 100%;
+  background: var(--lihgt-blue);
+  margin-top: 20px;
+  text-align: left;
+}
+
+.popup2 img {
+  width: 120px;
+}
+
+.popupOneWrapper,
+.popupTwoWrapper {
+  display: none;
+  z-index: 1000;
+}
+
+.popup2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 35px;
+}
+
+.popup2 button {
+  width: 100%;
+}
+
+.popup2 p {
+  font-size: 22px;
+}
+
+.popup2 h2 {
+  font-size: 45px;
+  color: var(--light-purple);
+}
+
+.dateWithBadge {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* Styling for popup - End */
+
+@media screen and (max-width: 1900px) {
+}
 
 @media screen and (max-width: 1600px) {
   .webNav {
@@ -2763,10 +2900,503 @@ footer .container {
   .caseStudyMiddle .right img {
     object-fit: cover;
     border-radius: 18px;
-  
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .webNav {
+    padding: 0 30px;
+    justify-content: space-between;
   }
 
+  .webNav ul {
+    align-items: center;
+  }
 
+  .ctaWrapper {
+    padding: 0 20px;
+  }
+
+  .ctaWrapper h2 {
+    font-size: 40px;
+  }
+
+  .ctaWrapper img {
+    width: 200px;
+  }
+  .aboutRight {
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+  .blog h3 {
+    font-size: 40px;
+  }
+
+  .blog button {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .blog button img {
+    width: 50px;
+  }
+
+  .robertsWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 90%;
+  }
+  .firstThingsBoxes {
+    flex-wrap: nowrap;
+  }
+  .meetBuddiRight {
+    padding-right: 50px;
+  }
+
+  .meetBuddiRight .btn {
+    width: 100%;
+  }
+
+  .meetBuddiRight .sectionHeading h2 {
+    font-size: 40px;
+  }
+
+  .meetBuddiRight .sectionHeading p {
+    font-size: 20px;
+  }
+
+  .blog > img {
+    height: 350px;
+  }
+
+  .blog button {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .blog button img {
+    width: 50px;
+  }
+
+  .blog h3 {
+    font-size: 30px;
+  }
+
+  .btn {
+    padding: 20px 30px;
+  }
+
+  .btn img {
+    width: 50px;
+  }
+
+  .keyLeft button {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .keyLeft button img {
+    width: 50px;
+  }
+
+  .footerWrapper {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    row-gap: 100px;
+  }
+
+  .footerWrapper > div {
+    width: 45%;
+  }
+
+  .footerSocials > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .caseStudyMiddle .right img {
+    height: auto;
+  }
+
+  .pageHeading h1 {
+    font-size: 60px;
+  }
+
+  .featureListItem {
+    width: 46%;
+  }
+
+  .ctaWrapper {
+    padding: 0 20px;
+  }
+
+  .ctaWrapper h2 {
+    font-size: 30px;
+  }
+
+  .ctaWrapper img {
+    width: 200px;
+  }
+
+  .progressInfoTop{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .progressInfoBox{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .leftTabs h3{
+    font-size: 24px;
+  }
+
+  .AccountPage .ctaWrapper{
+    gap: 50px;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  
+  .jobDetailsProfile{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .userAccountBookedJobs .accountProgressBox{
+    max-height: 2000px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .webNav ul {
+    display: none;
+  }
+
+  .webNav {
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .webNav .menuIcon {
+    display: block;
+  }
+
+  .webNav .menuIcon i {
+    font-size: 40px;
+  }
+
+  .navBtn {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .heroContent h1 {
+    font-size: 60px;
+  }
+
+  .heroContent h3 {
+    font-size: 40px;
+  }
+  .heroImage {
+    width: 75%;
+  }
+  .blogs {
+    flex-direction: column;
+  }
+  .blog > img {
+    height: auto;
+  }
+
+  .blog h3 {
+    font-size: 30px;
+  }
+
+  .blog p {
+    font-size: 20px;
+  }
+
+  .blog button {
+    width: 60%;
+    font-size: 20px;
+    padding: 18px 20px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 18px 30px;
+  }
+
+  .btn img {
+    width: 50px;
+  }
+
+  .blog button img {
+    width: 50px;
+  }
+
+  #firstThing .container {
+    margin-top: -300px;
+  }
+
+  .firstThingsBoxes {
+    flex-wrap: wrap;
+  }
+
+  .firstThingsBoxes .box {
+    width: 45% !important;
+  }
+
+  .keyFeatures {
+    padding-left: 80px;
+    flex-direction: column;
+  }
+
+  .keyLeft .sectionHeading h2 {
+    font-size: 40px;
+  }
+
+  .keyLeft .sectionHeading p {
+    font-size: 20px;
+  }
+
+  .keyLeft button {
+    width: 80%;
+    margin-top: 30px;
+    padding: 20px 30px;
+  }
+
+  .keyLeft button img {
+    width: 50px;
+  }
+
+  .caseStudyTop h1 {
+    font-size: 40px;
+  }
+
+  .caseStudyMiddle {
+    flex-direction: column;
+  }
+
+  .caseStudyMiddle .left,
+  .caseStudyMiddle .right {
+    width: 100%;
+  }
+
+  .ctaWrapper {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .ctaWrapper h2 {
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .faqs {
+    width: 100%;
+  }
+
+  #AboutUs {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 100px;
+  }
+
+  .aboutLeft {
+    width: 80% !important;
+  }
+
+  #AboutUs .aboutRight {
+    width: 90%;
+    margin: auto;
+  }
+
+  #aboutUsPage .keyFeatures {
+    padding: 0;
+  }
+  .jobTrackInfos{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .jobLeft{
+    width: 100%;
+  }
+  .jobRight{
+    width: 100%;
+  }
+  .dashboardNav{
+    padding: 0 40px;
+  }
+
+  .leftTabs{
+    flex-direction: column;
+    overflow: visible;
+    height: auto;
+  }
+
+  .leftTabs .active{
+    width: 100%;
+  }
+
+  .leftTabs h3{
+    width: 100%;
+  }
+
+  .progressRight{
+    padding: 30px;
+    width: 55%;
+  }
+  .progressLeft{
+    width: 45%;
+  }
+  footer::before {
+    display: none;
+  }
+
+  .profileTop{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .profileInfos{
+    padding-left: 40px;
+  }
+
+  .reviewsWrapper{
+    flex-wrap: wrap;
+  }
+
+  .profilePhotos > div{
+    flex-wrap: wrap;
+  }
+
+  .profilePhotos > div img{
+    width: 48%;
+  }
+
+  .topInputs .inputFieldWithBtn input{
+    width: 50%;
+  }
+  .topInputs .inputFieldWithBtn button{
+    width: 50%;
+  }
+
+  .portalBox{
+    margin-top: -400px;
+    padding: 50px 40px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  #meetBuddi {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .pageHeading h1 {
+    font-size: 8vw;
+  }
+  .meetBuddiLeft,
+  .meetBuddiRight {
+    width: 100% !important;
+  }
+
+  .meetBuddiRight {
+    padding: 0 40px;
+  }
+
+  .featureListItem {
+    width: 100%;
+  }
+
+  footer {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .footerWrapper {
+    justify-content: flex-start;
+  }
+
+  
+
+  .footerWrapper::before {
+    display: none;
+  }
+
+  .footerWrapper > .footerLogo {
+    width: 50% !important;
+  }
+
+  .footerWrapper > div {
+    width: 100%;
+  }
+
+  .twoReq{
+    flex-direction: column;
+  }
+
+  .bookingEntry, .billingEntry{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .ctaWrapper{
+    text-align: center;
+  }
+
+  .bottomLogos .logoWrapper{
+    flex-direction: column;
+  }
+  .dashboardNav .logo img{
+    width: 200px;
+  }
+
+  .dashboardNav {
+    gap: 20px;
+  }
+
+  .dashboardNav button{
+    padding: 10px 40px;
+    font-size: 18px;
+  }
+
+  .progressInfoBox{
+    padding-left: 30px;
+  }
+
+  .accountProgressBox{
+    flex-direction: column;
+    max-height: fit-content;
+  }
+
+  .progressLeft{
+    width: 100%;
+  }
+
+  .progressRight{
+    padding: 30px;
+    width: 100%;
+    padding-bottom: 80px;
+  }
+
+  .portalBox{
+    margin-top: -250px;
+  }
+
+  .userAccountBookedJobs .accountProgressBox{
+    height: fit-content;
+  }
 }
 
 /* Media Query for Mobile Screen - Start */
@@ -2778,7 +3408,8 @@ footer .container {
   }
   .webNav {
     width: 100%;
-    padding: 0 20px;
+    padding-left: 0;
+    padding: 0 30px;
     justify-content: space-between;
   }
 
@@ -2877,10 +3508,15 @@ footer .container {
   }
 
   .keyLeft button {
-    width: 90%;
+    width: 80%;
     align-items: center;
     text-align: center;
     margin-top: 20px;
+    padding: 20px 30px;
+  }
+
+  .keyLeft button img {
+    width: 50px;
   }
 
   .keyRight {
@@ -2982,6 +3618,37 @@ footer .container {
   footer::before {
     display: none;
   }
+
+  .navBtns{
+    flex-direction: column;
+  }
+
+  .profilePhotos > div {
+    flex-direction: row;
+  }
+
+  .profilePhotos > div img{
+    width: 45%;
+  }
+
+  .OperatorProfilePage .dashboardNav .logo img{
+    width: 150px !important;
+  }
+
+  .dashboardNav {
+    padding: 0 20px;
+  }
+
+  .navBtns button{
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .portalBox{
+    margin-top: -200px;
+    padding: 40px 20px;
+  }
+
 }
 
 /* Media Query for Mobile Screen - End */

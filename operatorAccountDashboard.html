@@ -11,6 +11,53 @@
   />
   <link rel="stylesheet" href="./css/styles.css" />
   <body class="OperatorAccountDashboardPage AccountPage">
+    <!-- Popops - start  -->
+
+    <div class="popupWrapper popupOneWrapper">
+      <div class="popup popup1">
+        <i class="fa-solid fa-xmark popupOneClose"></i>
+        <div class="popupHeading">
+          <h2>Almost there!</h2>
+          <p>
+            Your quote request will be out there in no time, we <br />
+            just need you to sign in first!
+          </p>
+          <div class="popupForm">
+            <input type="text" placeholder="Username" />
+            <input type="password" placeholder="Password" />
+            <button type="button" class="btn2">Login</button>
+          </div>
+
+          <div class="popupHeading2">
+            <h2>Not got an account?</h2>
+            <p>
+              In order to access our bank of operators and features, you'll
+              <br />
+              need to create an account first (it's quick we promise!)
+            </p>
+          </div>
+          <button type="button" class="btn2 createAccountBtn">
+            Create an account
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popupWrapper popupTwoWrapper">
+      <div class="popup popup2">
+        <i class="fa-solid fa-xmark popupTwoClose" ></i>
+        <img src="./assets/images/check.png" alt="" />
+        <h2>Success!</h2>
+        <p>
+          Your quote is now on its way to our trusted operators! Keep track of
+          your quotes in your accoun
+        </p>
+        <button class="btn2 lightPurple">My Account</button>
+      </div>
+    </div>
+
+    <!-- Popops - end  -->
+
     <!-- Body Start  -->
 
     <header class="dashboardHeader">
@@ -138,18 +185,21 @@
                   </p>
                   <p><span>Due: 29/03/2024</span></p>
                 </div>
-                <button type="button" class="greenBtn">Paid</button>
+                <button type="button" class="greenBtn openPopup1">Paid</button>
               </div>
               <div class="billingEntry">
                 <div>
-                  <h4 class="date">Monday 29th April 2024</h4>
+                  <div class="dateWithBadge">
+                    <h4 class="date">Monday 29th April 2024</h4>
+                    <span class="statusBadge orange">Overdue</span>
+                  </div>
                   <p>
                     <span>Operator:</span>
                     Roberts Travel Group
                   </p>
                   <p><span>Due: 29/03/2024</span></p>
                 </div>
-                <button type="button" class="green">Panding</button>
+                <button type="button" class="openPopup2">Panding</button>
               </div>
             </div>
             <button type="button">See all billing information</button>
@@ -174,9 +224,7 @@
               help.
             </p>
           </div>
-          <a href="#">
-            Contact Us
-          </a>
+          <a href="#"> Contact Us </a>
         </div>
       </div>
     </section>
@@ -203,19 +251,21 @@
     <footer>
       <div class="container">
         <div class="footerWrapper">
-          <div class="footerLogo">
+          <a href="./index.html" class="footerLogo">
             <img src="./assets/images/Buddi_Logo_White.png" alt="" />
-          </div>
+          </a>
           <div class="footerMeetBuddi">
             <h4>Meet Buddi</h4>
-            <a href="#">Our Services</a>
-            <a href="#">Important Information </a>
-            <a href="#">Terms & Conditions</a>
+            <a href="./operatorAccountDashboard.html">Our Services</a>
+            <a href="./operatorAccountProgressTab1.html"
+              >Important Information
+            </a>
+            <a href="./userAccountBookedJobs.html">Terms & Conditions</a>
           </div>
           <div class="footerCompany">
             <h4>Company</h4>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
+            <a href="./operatorAccountProgressTab2.html">Terms & Conditions</a>
+            <a href="./operatorAccountRequests.html">Privacy Policy</a>
           </div>
 
           <div class="footerSocials">
@@ -232,6 +282,9 @@
 
     <!-- Footer End -->
 
+
+
+    <script src="./js/index.js"></script>
     <!-- Body End  -->
   </body>
 </html>
